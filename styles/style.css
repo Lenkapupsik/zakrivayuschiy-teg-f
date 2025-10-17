@@ -20,13 +20,14 @@
   background-color: var(--bg-color, #fff);
   background-image: var(--bg-image);
   background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
 
 @supports (font-variation-settings: normal) {
   .page {
-    font-family: var(--content-font-family, 'Inter-Variable', sans-serif);
+    font-family: var(--content-font-family, 'Inter-Variable'), sans-serif;
     font-variation-settings: 'wght' var(--text-card-font-weight, 410);
   }
 }
@@ -47,14 +48,14 @@
 }
 
 .header__logo {
-  font-family: var(--accent-font-family, sans-serif);
+  font-family: var(--accent-font-family, 'PressStart2P'), sans-serif;
   font-weight: var(--accent-font-weight, 400);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
 }
 
 .header__title {
-  font-family: var(--accent-font-family, sans-serif);
+  font-family: var(--accent-font-family, 'PressStart2P'), sans-serif;
   font-weight: var(--accent-font-weight, 400);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
@@ -136,7 +137,7 @@
 .card__label {
   position: absolute;
   opacity: 0.5;
-  font-family: var(--accent-font-family, sans-serif);
+  font-family: var(--accent-font-family, 'PressStart2P'), sans-serif;
   font-weight: var(--accent-font-weight, 400);
   font-size: var(--accent-font-size, 14px); /**/
   font-style: normal;
@@ -180,7 +181,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   align-self: self-end; 
   min-block-size: 38px;
   min-inline-size: 170px; 
@@ -244,7 +245,11 @@
 }
  
 .like-icon {
+  object-fit: cover;
+  object-position: center;
   cursor: pointer;
+  min-inline-size: 38px;
+
 }
 
 .like-icon .sparks {
@@ -336,7 +341,7 @@
 
 .button__text {
   position: relative;
-  font-family: var(--accent-font-family, sans-serif);
+  font-family: var(--accent-font-family, 'PressStart2P'), sans-serif;
   font-weight: var(--accent-font-weight, 400);
   font-size: var(--accent-font-size, 14px);
   mix-blend-mode: difference;
@@ -367,7 +372,7 @@ dialog .floppy-icon {
 
 .dialog__text {
   color: currentColor;
-  font-family: var(--accent-font-family, sans-serif);
+  font-family: var(--accent-font-family, 'PressStart2P'), sans-serif;
   font-weight: var(--accent-font-weight, 400);
   font-size: var(--accent-font-size, 14px);
   font-style: normal;
