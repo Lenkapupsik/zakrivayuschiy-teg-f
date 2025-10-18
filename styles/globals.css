@@ -8,8 +8,7 @@
   box-sizing: border-box;
 }
 
-body,
-figure {
+body {
   margin: 0;
 }
 
@@ -51,4 +50,9 @@ ol {
   block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+figure {
+  margin-block: 0;
+  margin-inline: 0;
 }
