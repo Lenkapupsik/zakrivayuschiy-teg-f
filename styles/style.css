@@ -97,6 +97,7 @@
 .card__block-image {
   position: relative;
   aspect-ratio: 1 / 1;
+  overflow: hidden;
 }
 
 .card__image {
@@ -251,7 +252,6 @@
   object-position: center;
   cursor: pointer;
   min-inline-size: 38px;
-
 }
 
 .like-icon .sparks {
