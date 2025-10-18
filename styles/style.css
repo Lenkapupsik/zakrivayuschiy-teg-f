@@ -11,7 +11,6 @@
 */
 
 .page {
-  padding-inline: clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem);
   padding-block: 100px;
   color: var(--content-text-color, #000);
   font-family: 'Arial', sans-serif;
@@ -23,6 +22,9 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @supports (font-variation-settings: normal) {
